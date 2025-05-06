@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import "../styles/Search.css";
 
-import aghaKhanImage from "../assets/images/Agha_khan_hospital1.jpg";
-import generalHospitalImage from "../assets/images/Agha_khan_hospital1.jpg";
-import sunriseMedicalImage from "../assets/images/Agha_khan_hospital1.jpg";
-import redCrossClinicImage from "../assets/images/Agha_khan_hospital1.jpg";
-import healthFirstImage from "../assets/images/Agha_khan_hospital1.jpg";
-import wellCareCenterImage from "../assets/images/Agha_khan_hospital1.jpg";
-import trustHospitalImage from "../assets/images/Agha_khan_hospital1.jpg";
-import medlineHospitalImage from "../assets/images/Agha_khan_hospital1.jpg";
+import aghaKhanImage from "../assets/images/agha khan.png";
+import generalHospitalImage from "../assets/images/liaquat hospital.png";
+import sunriseMedicalImage from "../assets/images/jpmc.png";
+import redCrossClinicImage from "../assets/images/fatimid.png";
+import healthFirstImage from "../assets/images/nicvd.png";
+import wellCareCenterImage from "../assets/images/husaini.png";
+import trustHospitalImage from "../assets/images/chughtai.png";
+import medlineHospitalImage from "../assets/images/pwa.png";
 
 const hospitals = [
-  { name: "Agha Khan", image: aghaKhanImage },
-  { name: "General Hospital", image: generalHospitalImage },
-  { name: "Sunrise Medical", image: sunriseMedicalImage },
-  { name: "Red Cross Clinic", image: redCrossClinicImage },
-  { name: "Health First", image: healthFirstImage },
-  { name: "WellCare Center", image: wellCareCenterImage },
-  { name: "Trust Hospital", image: trustHospitalImage },
-  { name: "Medline Hospital", image: medlineHospitalImage },
+  { name: "Agha Khan Hospital", image: aghaKhanImage },
+  { name: "Liaquat National Hospital", image: generalHospitalImage },
+  { name: "Jinnah Medical Center", image: sunriseMedicalImage },
+  { name: "Fatimid Foundation Blood Bank", image: redCrossClinicImage },
+  { name: "National Institute of Cardivascular Disease (NICVD)", image: healthFirstImage },
+  { name: "Husaini Blood Bank", image: wellCareCenterImage },
+  { name: "Chughtai Blood Center", image: trustHospitalImage },
+  { name: "PWA Blood Bank", image: medlineHospitalImage },
 ];
 
 const Search = () => {
@@ -32,7 +32,7 @@ const Search = () => {
     <div className="search-container">
       <input
         type="text"
-        placeholder="Search hospital..."
+        placeholder="Search hospital/ blood"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="search-bar"
