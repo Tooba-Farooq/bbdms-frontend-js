@@ -35,8 +35,8 @@ const Dashboard = () => {
 
       {/* Left-aligned card grid */}
       <div className="dashboard-grid">
-        <div className="card">
-          <FaTint className="card-icon" onClick={() => navigate("/search")} />
+        <div className="card" onClick={() => navigate("/search")}>
+          <FaTint className="card-icon" />
           <h3>Request Blood</h3>
           <p>Request required blood</p>
         </div>
